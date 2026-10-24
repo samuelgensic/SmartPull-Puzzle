@@ -2,7 +2,7 @@
 
 A relaxing, 3D spatial visualization experience. Pull, unwind, unpuzzle your mind.
 
-**Play:** https://samuelgensic.github.io/SmartPull-Play/
+**Play:** https://samuelgensic.github.io/SmartPull-Puzzle/
 
 Designed by Samuel Gensic.
 
