@@ -154,6 +154,7 @@ html[data-dk]:not(.neon) #upgrade button.upbuy{color:var(--onacc)}
 html.neon #upgrade button.upbuy{background:transparent; color:#FF2E97; box-shadow:inset 0 0 0 1.5px #FF2E97,0 0 10px rgba(255,46,151,.35)}
 
 html.appstrip #tierRow,html.appstrip #devRow,html.appstrip #devFloor,html.appstrip #devJump,html.appstrip #devDaily,html.appstrip #devOpen,html.appstrip #devTips,html.appstrip #shortOpenRow,html.appstrip #devLink{display:none!important}
+.upprice,#upgrade button.upbuy{display:none!important}
 
 button.lvl{width:46px; min-width:0; height:46px; padding:0; background:transparent; box-shadow:none; color:var(--ink); display:inline-flex; align-items:center; justify-content:center; border-radius:50%}
 .lvDisc{position:relative; width:46px; height:46px; flex:none; border-radius:50%; background:var(--chip); color:var(--ink); display:grid; place-items:center;
@@ -1289,17 +1290,17 @@ html.neon .dlystrip .dd.now{outline:2px solid var(--accent); outline-offset:2px}
     <div class="upsheet" role="dialog" aria-labelledby="upTitle">
       <div class="uptitle" id="upTitle">More levels. More modes. More puzzles.</div>
       <div class="upcard" id="up-plus">
-        <div class="uphead"><span>SmartPull Pack</span><span class="upprice" id="up-plus-price">$1.99</span></div>
+        <div class="uphead"><span>SmartPull Pack</span><span class="upprice" id="up-plus-price"></span></div>
         <ul><li>Levels 1–50</li><li>SmartPull color mode</li></ul>
         <button class="opt upbuy" id="up-plus-buy" data-buy="plus" type="button" hidden>Get the Pack</button>
       </div>
       <div class="upcard best">
-        <div class="uphead"><span id="up-full-name">Complete</span><span class="upprice" id="up-full-price">$4.99</span></div>
+        <div class="uphead"><span id="up-full-name">Complete</span><span class="upprice" id="up-full-price"></span></div>
         <ul><li>All 100 levels</li><li>All three modes, including Neon</li><li>Bonus chapters, free as they arrive</li></ul>
         <button class="opt upbuy" id="up-full-buy" data-buy="full" type="button" hidden>Get Complete</button>
         <div class="upnote" id="up-full-note" hidden>Everything you have now, plus levels 51–100 and the Neon mode.</div>
       </div>
-      <p class="upsmall" id="upSmall">Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.</p>
+      <p class="upsmall" id="upSmall">Purchases happen through the App Store in the iPhone and iPad app.</p>
       <button class="opt upclose" id="upClose" type="button">Not now</button>
     </div>
   </div>
@@ -1526,8 +1527,6 @@ es:{
 "Every level":"Todos los niveles",
 "More":"Más",
 "Done":"Listo",
-"SmartPull Pack · $1.99":"Pack SmartPull · $1.99",
-"Complete · $4.99":"Completo · $4.99",
 "Levels {n}–{m}":"Niveles {n}–{m}",
 "🔒 Levels {n}–{m}":"🔒 Niveles {n}–{m}",
 "Best moves":"Mejores jugadas",
@@ -1560,7 +1559,7 @@ es:{
 "Get the Pack · {a}":"Comprar el Pack · {a}",
 "Get Complete · {a}":"Comprar Completo · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"Todo lo que tienes, más los niveles {n}–{m} y el modo Neon.",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"Las compras se hacen en el App Store desde la app para iPhone y iPad. En esta versión de prueba, prueba cada versión en Ajustes → Versión.",
+"Purchases happen through the App Store in the iPhone and iPad app.":"Las compras se hacen en el App Store desde la app para iPhone y iPad.",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"Las compras las gestiona el App Store. ¿Ya compraste? Usa Restaurar compras en Ajustes.",
 "Not now":"Ahora no",
 "Tip":"Consejo",
@@ -2417,8 +2416,6 @@ fr:{
 "Every level":"Tous les niveaux",
 "More":"Plus",
 "Done":"OK",
-"SmartPull Pack · $1.99":"Pack SmartPull · $1.99",
-"Complete · $4.99":"Complet · $4.99",
 "Levels {n}–{m}":"Niveaux {n}–{m}",
 "🔒 Levels {n}–{m}":"🔒 Niveaux {n}–{m}",
 "Best moves":"Meilleurs coups",
@@ -2451,7 +2448,7 @@ fr:{
 "Get the Pack · {a}":"Obtenir le Pack · {a}",
 "Get Complete · {a}":"Obtenir Complet · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"Tout ce que tu as déjà, plus les niveaux {n}–{m} et le mode Neon.",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"Les achats se font via l'App Store dans l'app iPhone et iPad. Dans cet aperçu, essaie chaque version depuis Réglages → Version.",
+"Purchases happen through the App Store in the iPhone and iPad app.":"Les achats se font via l'App Store dans l'app iPhone et iPad.",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"Les achats sont gérés par l'App Store. Déjà acheté ? Utilise Restaurer les achats dans Réglages.",
 "Not now":"Plus tard",
 "Tip":"Astuce",
@@ -3307,8 +3304,6 @@ de:{
 "Every level":"Alle Level",
 "More":"Mehr",
 "Done":"Fertig",
-"SmartPull Pack · $1.99":"SmartPull-Paket · $1.99",
-"Complete · $4.99":"Komplett · $4.99",
 "Levels {n}–{m}":"Level {n}–{m}",
 "🔒 Levels {n}–{m}":"🔒 Level {n}–{m}",
 "Best moves":"Beste Züge",
@@ -3341,7 +3336,7 @@ de:{
 "Get the Pack · {a}":"Paket holen · {a}",
 "Get Complete · {a}":"Komplett holen · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"Alles, was du schon hast, plus Level {n}–{m} und den Neon-Modus.",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"Käufe laufen über den App Store in der App für iPhone und iPad. In dieser Vorschau probierst du jede Version unter Einstellungen → Version aus.",
+"Purchases happen through the App Store in the iPhone and iPad app.":"Käufe laufen über den App Store in der App für iPhone und iPad.",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"Käufe laufen über den App Store. Schon gekauft? Nutze „Käufe wiederherstellen“ in den Einstellungen.",
 "Not now":"Nicht jetzt",
 "Tip":"Tipp",
@@ -4208,8 +4203,6 @@ ja:{
 "Every level":"全レベル",
 "More":"もっと見る",
 "Done":"完了",
-"SmartPull Pack · $1.99":"SmartPullパック · $1.99",
-"Complete · $4.99":"コンプリート · $4.99",
 "Levels {n}–{m}":"レベル{n}–{m}",
 "🔒 Levels {n}–{m}":"🔒 レベル{n}–{m}",
 "Best moves":"ベスト手数",
@@ -4242,7 +4235,7 @@ ja:{
 "Get the Pack · {a}":"パックを入手 · {a}",
 "Get Complete · {a}":"コンプリートを入手 · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"今あるものすべてに加えて、レベル{n}–{m}とNeonモード。",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"購入はiPhone・iPadアプリのApp Storeで行います。このプレビューでは、設定 → バージョンで各バージョンを試せます。",
+"Purchases happen through the App Store in the iPhone and iPad app.":"購入はiPhone・iPadアプリのApp Storeで行います。",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"購入はApp Storeで処理されます。購入済みの場合は、設定の「購入を復元」を使ってください。",
 "Not now":"今はしない",
 "Tip":"ヒント",
@@ -5109,8 +5102,6 @@ zh:{
 "Every level":"所有关卡",
 "More":"更多",
 "Done":"完成",
-"SmartPull Pack · $1.99":"SmartPull 礼包 · $1.99",
-"Complete · $4.99":"完整版 · $4.99",
 "Levels {n}–{m}":"第{n}–{m}关",
 "🔒 Levels {n}–{m}":"🔒 第{n}–{m}关",
 "Best moves":"最佳步数",
@@ -5143,7 +5134,7 @@ zh:{
 "Get the Pack · {a}":"获取礼包 · {a}",
 "Get Complete · {a}":"获取完整版 · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"你现有的全部内容，外加第{n}–{m}关和Neon模式。",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"购买通过 iPhone 和 iPad 应用中的 App Store 完成。在此预览中，可在“设置 → 版本”中试用各版本。",
+"Purchases happen through the App Store in the iPhone and iPad app.":"购买通过 iPhone 和 iPad 应用中的 App Store 完成。",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"购买由 App Store 处理。已经买过？请在设置中使用“恢复购买”。",
 "Not now":"以后再说",
 "Tip":"提示",
@@ -6009,8 +6000,6 @@ pt:{
 "Every level":"Todos os níveis",
 "More":"Mais",
 "Done":"OK",
-"SmartPull Pack · $1.99":"Pacote SmartPull · $1.99",
-"Complete · $4.99":"Completo · $4.99",
 "Levels {n}–{m}":"Níveis {n}–{m}",
 "🔒 Levels {n}–{m}":"🔒 Níveis {n}–{m}",
 "Best moves":"Melhores jogadas",
@@ -6043,7 +6032,7 @@ pt:{
 "Get the Pack · {a}":"Obter o Pacote · {a}",
 "Get Complete · {a}":"Obter Completo · {a}",
 "Everything you have now, plus levels {n}–{m} and the Neon mode.":"Tudo o que você já tem, mais os níveis {n}–{m} e o modo Neon.",
-"Purchases happen through the App Store in the iPhone and iPad app. In this preview, try each version from Settings → Version.":"As compras são feitas pela App Store no app para iPhone e iPad. Nesta prévia, teste cada versão em Ajustes → Versão.",
+"Purchases happen through the App Store in the iPhone and iPad app.":"As compras são feitas pela App Store no app para iPhone e iPad.",
 "Purchases are handled by the App Store. Already bought? Use Restore purchases in Settings.":"As compras são feitas pela App Store. Já comprou? Use Restaurar compras em Ajustes.",
 "Not now":"Agora não",
 "Tip":"Dica",
@@ -11309,8 +11298,8 @@ const mainTop=()=>devMode?MAIN_N-1:Math.min(best,maxLevel()-1,MAIN_N-1);
 const topLevel=()=>isBonus(levelIdx)?(bonusOpen()?catHi(levelIdx):levelIdx):mainTop();       
 const capCleared=()=>best>=maxLevel();                 
 const themeOK=t=>{try{if(devMode)return true}catch(e){}return TIERS[tier].themes.includes(t)}; 
-const THEME_PRICE={brand:'$1.99',neon:'$4.99'};
-const PRICE={plus:'$1.99',full:'$4.99',upgrade:'$2.99'}; 
+const THEME_PRICE={};
+const PRICE={plus:'',full:'',upgrade:''}; 
 levelIdx=Math.min(levelIdx,topLevel());
 
 
@@ -14866,7 +14855,7 @@ function fitCredit(){const m=document.querySelector('.mark'),c=document.querySel
 fitCredit();addEventListener('resize',fitCredit);try{new ResizeObserver(fitCredit).observe(document.querySelector('.mark'))}catch(e){}
 try{document.fonts.ready.then(fitCredit);document.fonts.addEventListener('loadingdone',fitCredit)}catch(e){}
  
-const SC_VERSIONS=[['free','Free','Levels 1–10',0,10],['plus','SmartPull Pack · $1.99','Levels 11–50',10,50],['full','Complete · $4.99','Levels 51–100',50,100]];
+const SC_VERSIONS=[['free','Free','Levels 1–10',0,10],['plus','SmartPull Pack','Levels 11–50',10,50],['full','Complete','Levels 51–100',50,100]];
 function openScorecard(){
   [panel,lvPanel,document.getElementById('soundp'),document.getElementById('calpanel'),document.getElementById('dailycard')].forEach(p=>{if(p)p.hidden=true});
   if(stageEl)stageEl.classList.remove('dim'); 
@@ -15910,7 +15899,7 @@ document.getElementById('devJump').addEventListener('submit',e=>{e.preventDefaul
 document.getElementById('tierRow').hidden=devMode;
 document.getElementById('shortOpenRow').hidden=!devMode; 
 (function(){const box=document.getElementById('optTier');
-  [['free','Free'],['plus','$1.99'],['full','$4.99']].forEach(([id,label],i)=>{const b=document.createElement('button');b.className='opt';b.id='optTier-'+i;b.textContent=label;
+  [['free','Free'],['plus','Pack'],['full','Complete']].forEach(([id,label],i)=>{const b=document.createElement('button');b.className='opt';b.id='optTier-'+i;b.textContent=label;
     b.setAttribute('aria-pressed',tier===id?'true':'false');b.onclick=()=>{uiSfx('select');setTier(id)};box.appendChild(b)})})();
 
 function pageTurn(){ 
